@@ -1,0 +1,21 @@
+# generated data and figures
+data/
+
+# SLURM job logs (scripts/harvest_array.sbatch and the canary jobs write them to the
+# submit directory)
+vlageom-harvest_*.out
+slurm-*.out
+
+# python
+__pycache__/
+.ruff_cache/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.venv-sim/
+
+# editors / OS
+.DS_Store
+*.swp

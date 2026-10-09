@@ -1,0 +1,68 @@
+[project]
+name = "vla-geometry"
+version = "0.1.0"
+description = "Code for the simulation experiments of the paper 'A Phenomenology of Neural Geometry in Vision-Language-Action Models' (MolmoBot-DROID in MolmoSpaces)"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+# MolmoBot (the policy package) requires Python 3.11.
+requires-python = "~=3.11.0"
+
+# Analysis, panel and figure stages need only these. Versions are the ones the paper's numbers and
+# figures were produced with; the PNG output also depends on the matplotlib and Pillow versions.
+dependencies = [
+    "numpy==2.4.4",
+    "scipy==1.17.1",
+    "scikit-learn==1.8.0",
+    "matplotlib==3.10.9",
+    "pillow==11.3.0",
+    # BLAS thread counts are set in code (threadpoolctl) where the last bits of a result depend on
+    # them.
+    "threadpoolctl==3.6.0",
+]
+
+[project.optional-dependencies]
+# Rollouts and activation harvests (GPU + EGL): simulator, policy and model code. These are the
+# direct dependencies; requirements-sim.lock pins every package of this environment (including
+# the dependencies of these) to the versions of the paper's runs.
+sim = [
+    "molmo-spaces @ git+https://github.com/allenai/molmospaces.git@c7f5a3278c86d68c24cca4a578909ea1d51ea8c3",
+    "molmobot @ git+https://github.com/allenai/MolmoBot.git@d0d71e287871d78ad4b4fd6904919199850fbbf8#subdirectory=MolmoBot",
+    # Not imported directly; molmo-spaces pins the same version (asset download and cache).
+    "molmospaces-resources==0.0.1b4",
+    # MolmoSpaces pins mujoco-mjx==3.4.0; the mujoco core must match it (newer cores remove an enum
+    # that mujoco-mjx 3.4.0 still uses).
+    "mujoco==3.4.0",
+    "torch==2.7.1",
+    "transformers==4.57.6",
+    "huggingface-hub==0.36.2",
+    "filelock==3.29.0",
+    "imageio==2.37.3",
+    # MolmoSpaces reads the WordNet corpora when it is imported; scripts/prefetch_assets.py
+    # downloads them with nltk.
+    "nltk==3.9.4",
+]
+# CPU stages that use torch: the gripper edit basis of Figure 7 (pipelines/gripper_fig7/10_basis.py)
+# and the chart encodings of Figure 6 b-d (pipelines/wrist_steer/70_panels.py, 80_numbers.py). The
+# CPU build of torch 2.7.1 (install it first from https://download.pytorch.org/whl/cpu) gives the
+# same outputs as the PyPI build. ripser only adds an optional measure to Figure 6a's metrics file.
+analysis = [
+    "torch==2.7.1",
+    "ripser==0.6.15",
+]
+# Optional: text and image comparison of PDF renders in tests/compare_fig1_render.py and the image
+# comparisons of tests/compare_fig5_render.py.
+test = [
+    "pymupdf==1.28.2",
+]
+
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["vlageom*"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100

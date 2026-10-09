@@ -1,0 +1,283 @@
+{
+ "panels": {
+  "gripper": {
+   "px": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "5ea5944fdd2fe22bf73a0050d3c4ff90d39a669f"
+   },
+   "py": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "1a2c71ce3598ab21fd8219b96fa8253d1e45a2d7"
+   },
+   "pz": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "428e7bdda98fd38a47f0980ae5db9bdea33c58f4"
+   },
+   "ddx": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "ae20869b499c4a8d51517638e1c6b372f3ea2984"
+   },
+   "ddy": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "4a034ca00cd3cd26c5f5b1231e171f416c25ec68"
+   },
+   "ddz": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "49bfbe22df91ca7450220f5813493cc366c40e92"
+   },
+   "target": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "1ec472a28313b586edcc7e349e02c4af7f124ca3"
+   },
+   "aper": {
+    "dtype": "<f4",
+    "shape": [
+     1666
+    ],
+    "sha1": "ab06a095c0f23a3e37db8fb8abbfa9cde6dc6662"
+   },
+   "fc": {
+    "dtype": "<f4",
+    "shape": [
+     60,
+     4
+    ],
+    "sha1": "4cb003fc9c664c57699f0b342692275da909f0cd"
+   },
+   "fo": {
+    "dtype": "<f4",
+    "shape": [
+     79,
+     4
+    ],
+    "sha1": "bf16b4e21ac15705bf675ba1aecc7c3f52c339c4"
+   },
+   "scale": {
+    "dtype": "<f8",
+    "shape": [],
+    "sha1": "6f7c34ca1d15d6a697c779fcbc54627c8d9ad9da"
+   },
+   "evr": {
+    "dtype": "<f8",
+    "shape": [
+     3
+    ],
+    "sha1": "0293d36b9b1f252053f23d229a4510633c5c073d"
+   }
+  },
+  "wrist": {
+   "Z2": {
+    "dtype": "<f8",
+    "shape": [
+     39,
+     2
+    ],
+    "sha1": "f6fcc3dd34f3256eebdf9e123eb9468f23d27055"
+   },
+   "Z3": {
+    "dtype": "<f8",
+    "shape": [
+     39,
+     3
+    ],
+    "sha1": "dd5871ca76e25c8b93c619d7631e3eec277e59a1"
+   },
+   "roll": {
+    "dtype": "<f8",
+    "shape": [
+     39
+    ],
+    "sha1": "c89e7c1c5b452e71520d1fe68ddf87395c6a81c0"
+   },
+   "evr": {
+    "dtype": "<f8",
+    "shape": [
+     3
+    ],
+    "sha1": "320f57d1884fafd21a9cc0ea500c4a8836915595"
+   },
+   "nat3": {
+    "dtype": "<f4",
+    "shape": [
+     2496,
+     3
+    ],
+    "sha1": "e84eba8671dc9b3974ad58a809dad771cacd5d4a"
+   },
+   "nat_roll": {
+    "dtype": "<f4",
+    "shape": [
+     2496
+    ],
+    "sha1": "dc02f3879d2c3d91e0f491421582faf80b4e218c"
+   },
+   "house": {
+    "dtype": "<i8",
+    "shape": [
+     2496
+    ],
+    "sha1": "fe29316b0a14f02630249fbece60fecabea96d06"
+   },
+   "n_houses": {
+    "dtype": "<i8",
+    "shape": [],
+    "sha1": "8eca5c08199dfc3b4e0c7a160598495e906ea372"
+   }
+  },
+  "target": {
+   "bg": {
+    "dtype": "<f8",
+    "shape": [
+     4000,
+     3
+    ],
+    "sha1": "eb45ab6d80a9a9c3587178f05e82bd936dc26742"
+   },
+   "rgb": {
+    "dtype": "<f8",
+    "shape": [
+     4000,
+     3
+    ],
+    "sha1": "6a3e994f712d37bce90ff9d20497d6a7b24596b0"
+   },
+   "sub": {
+    "dtype": "<f8",
+    "shape": [
+     64,
+     3
+    ],
+    "sha1": "fb2388a4b241470bc1e4003500a9cfc6b8fc7e04"
+   },
+   "sub_rgb": {
+    "dtype": "<f8",
+    "shape": [
+     64,
+     3
+    ],
+    "sha1": "d9b17ff9d6471b7d057bf27160fb4dbf231ac194"
+   },
+   "curve": {
+    "dtype": "<f8",
+    "shape": [
+     600,
+     3
+    ],
+    "sha1": "0bf9b7db189bf43fa4c4b585e38223631d83fed4"
+   },
+   "curve_rgb": {
+    "dtype": "<f8",
+    "shape": [
+     600,
+     3
+    ],
+    "sha1": "3703e1ae7e5711cb1eafbb528dcc5c094b6e14c7"
+   },
+   "origin": {
+    "dtype": "<f8",
+    "shape": [
+     3
+    ],
+    "sha1": "cb6bb51f50f8354457fe2d9ce505e1cf06900cdf"
+   },
+   "note_r2": {
+    "dtype": "<f8",
+    "shape": [],
+    "sha1": "5a672a20df86ba53aa550d86a5881bb4aaafd730"
+   },
+   "note_r2_xyz": {
+    "dtype": "<f8",
+    "shape": [
+     3
+    ],
+    "sha1": "faeb402e46bf08753e4e92c7dc532f68b07385cb"
+   }
+  },
+  "distance": {
+   "pts": {
+    "dtype": "<f4",
+    "shape": [
+     15934,
+     3
+    ],
+    "sha1": "ed8402bae7ab235e64d078e5b427dd89e633bc42"
+   },
+   "d": {
+    "dtype": "<f4",
+    "shape": [
+     15934
+    ],
+    "sha1": "92de5569c56a31b342c9c7f3542681a45b9489fd"
+   },
+   "path": {
+    "dtype": "<f4",
+    "shape": [
+     17,
+     3
+    ],
+    "sha1": "c4ec2a9951255ebf9debbb06c4decf4af53e1d7b"
+   },
+   "path_d": {
+    "dtype": "<f4",
+    "shape": [
+     17
+    ],
+    "sha1": "e22a6ca689899343e61b7fd3d3f1d41ea45e59fd"
+   },
+   "cross": {
+    "dtype": "<f8",
+    "shape": [
+     2
+    ],
+    "sha1": "a241e28bc8662de3d0003c51366ba9bc594b058a"
+   },
+   "r2_m": {
+    "dtype": "<f8",
+    "shape": [],
+    "sha1": "874abbb5001a45a809ab6ef7411e90bb066bbe7a"
+   },
+   "r2_cm": {
+    "dtype": "<f8",
+    "shape": [],
+    "sha1": "c7e074ed96e79b3b94ed0a36875c1adfefb14c1e"
+   },
+   "note": {
+    "dtype": "<U28",
+    "shape": [],
+    "sha1": "2bc52b3b738a62f917964617ae9551118bedbadf"
+   }
+  }
+ },
+ "scores": {
+  "target_r2": {
+   "fwd": 0.7166926325148204,
+   "lat": 0.7347300104687273,
+   "up": 0.857494933187643
+  },
+  "target_note_r2": 0.7696391920570637,
+  "distance_r2_m": 0.8116735918271236,
+  "distance_r2_cm": 0.696506377615526
+ },
+ "fig1_png_md5": "ef226122aaa6edc2011884d6933717ef"
+}
